@@ -1,0 +1,97 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* font-family: "Kanit", sans-serif; */
+    font-family: "Sora", sans-serif;
+    background-color: white;
+    color: #26275e;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+    background-color: #f8f8f8;
+    /* Added background color for better visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Added shadow for better separation */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-out;
+    position: relative;
+    padding: 0 20px;
+    /* Added padding for responsiveness */
+}
+
+.section .content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    /* Changed to center content horizontally */
+    align-items: center;
+}
+
+#section2 .content {
+    order: 1;
+    margin-right: 20px;
+    /* Adjusted margin for better spacing */
+}
+
+#section2 .mockup-image {
+    order: 2;
+    margin-left: 20px;
+    /* Adjusted margin for better spacing */
+}
+
+.mockup-image {
+    width: 25%;
+    /* Adjusted width for better responsiveness */
+    object-fit: contain;
+}
+
+#section2 .title {
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 1.1;
+    background: linear-gradient(90deg, #d37c1a, #e25a8c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    font-size: 1.5rem;
+    /* Adjusted font size for better readability */
+    line-height: 0;
+    /* Adjusted line height for better readability */
+    margin-top: 10px;
+    /* Added margin for better spacing */
+}
